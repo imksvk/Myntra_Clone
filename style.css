@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 
-/* header  */
+/* navbar  */
 
 header{
     display: flex;
-    background-color: peachpuff;
+    background-color: white;
     height: 80px;
     justify-content: space-between;
     align-items: center;
+    border-bottom: #e3dcdc 1px solid;
 }
 
 .myntrahome{
@@ -38,6 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     min-width: 500px;
+    
 }
 
 .navbar a{
@@ -47,6 +49,8 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 5px solid white;
 }
 
 .navbar a sup{
@@ -56,7 +60,8 @@ header{
 
 .searchbar{
     height: 40px;
-    min-width: 400px;
+    min-width: 200px;
+    width: 30%;
     display: flex;
     align-items: center;
 
@@ -90,3 +95,136 @@ header{
    flex-direction: column;
    align-items: center;
 }
+
+.navbar a:hover{
+    border-bottom: 2px solid pink;
+}
+
+
+/* footer container  */
+
+.footercontainer{
+    padding: 30px 0px 40px 0px;
+    background-color: #fafbfc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footercolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.footercolumn a{
+    color: #282c3f;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.footercolumn h3{
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.copyright{
+    color: black;
+    text-align: end;
+    padding: 15px;
+}
+
+
+/* item css  */
+
+.itemscontainer{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    /* top bottom left right */
+}
+
+.itemcontainer{
+    width: 250px;
+}
+
+.itemimage{
+    width: 100%;
+}
+
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.companyname{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    text-overflow: hidden;
+
+}
+
+.itemname{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+
+.price{
+    font-size: 14px;
+    line-height: 15px;
+    color: #3f283e;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.currentprice{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.originalprice{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+
+}
+
+.discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+.btnaddbag{
+    background-color: lightgreen;
+    border: none;
+    padding: 3px 0px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 18px;
+    border: none;
+}
+
+
+
+
+
