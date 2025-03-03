@@ -30,6 +30,7 @@ function displaybagicon(){
 }
 
 function displayitemsonhomepage(){
+    if(itemscontainer === undefined) return;
     let innerhtml = '';
     items.forEach((item)=>{
         innerhtml += `
