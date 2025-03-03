@@ -4,6 +4,7 @@ onLOad();
 function onLOad(){
     loadbagitems();
     displaybagitems();
+    displaybagicon();
 }
 
 function loadbagitems(){
@@ -27,6 +28,16 @@ function displaybagitems(){
     });
     containerelement.innerHTML = innerhtml;
 }
+
+
+function removefrombag(itemid){
+  bagitems =   bagitems.filter(bagitemid => bagitemid != itemid);
+  localStorage.setItem('bagitems',JSON.stringify(bagitems));
+  loadbagitems();
+  displaybagicon();
+  displaybagitems();
+}
+
 
 function generateitemhtml(item){
 
@@ -52,7 +63,7 @@ function generateitemhtml(item){
               </div>
             </div>
 
-            <div class="removefromcart">X</div>
+            <div class="removefromcart" onclick="removefrombag(${item.id})">X</div>
           </div>
     `
 
