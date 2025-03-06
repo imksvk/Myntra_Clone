@@ -5,6 +5,41 @@ function onLOad(){
     loadbagitems();
     displaybagitems();
     displaybagicon();
+    displaybagsummary();
+}
+
+function displaybagsummary(){
+    let bagsummaryelement = document.querySelector(".bagsummary");
+
+    let totalitems = bagitemsobjects.length;
+    let totalmrp = 0;
+    let totaldiscount = 0;
+    let finalpayment = 0;
+
+    bagsummaryelement.innerHTML = `  <div class="bagdetailscontainer">
+            <div class="priceheader">PRICE DETAILS (${totalitems} Items) </div>
+            <div class="priceitem">
+              <span class="priceitemtag">Total MRP</span>
+              <span class="priceitemvalue">Rs${totalmrp}</span>
+            </div>
+            <div class="priceitem">
+              <span class="priceitemtag">Discount on MRP</span>
+              <span class="priceitemvalue pricedetailbasediscount">-Rs ${totaldiscount} </span>
+            </div>
+            <div class="priceitem">
+              <span class="priceitemtag">Convenience Fee</span>
+              <span class="priceitemvalue">Rs 99</span>
+            </div>
+            <hr>
+            <div class="pricefooter">
+              <span class="priceitemtag">Total Amount</span>
+              <span class="priceitemvalue">Rs ${finalpayment} </span>
+            </div>
+          </div>
+          <button class="btnplaceorder">
+            <div class="cssxjhrni">PLACE ORDER</div>
+          </button>
+        </div>`;
 }
 
 function loadbagitems(){
@@ -36,6 +71,7 @@ function removefrombag(itemid){
   loadbagitems();
   displaybagicon();
   displaybagitems();
+  displaybagsummary();
 }
 
 

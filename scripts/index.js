@@ -1,6 +1,6 @@
 let itemscontainer = document.querySelector(".itemscontainer");
 let bagitems;
-
+bannerchange();
 onLoad();
 
 function onLoad(){
@@ -60,7 +60,12 @@ function displayitemsonhomepage(){
 
 
 
-
+function bannerchange(){
+    let i = Math.floor((Math.random()*3)+1);
+    console.log(i);
+    let source =  `./images/banner${i}.jpg`;
+    document.querySelector(".banner").style.backgroundImage = `url(${source})`;
+}
 
 
 

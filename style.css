@@ -263,3 +263,46 @@ header{
 
 /* bag css  */
 
+
+
+
+
+/* banner css */
+
+
+
+.banner{
+    background-image: url(./images/banner1.jpg);
+    width: 100vw;
+    height: 90vh;
+    background-size:cover;  /* Adjusts the image to cover the div */
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+}
+
+.bannercontent{
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 30px;
+    line-height: 3rem;
+
+}
+
+.heading2{
+    font-size: xx-large;
+    color: #535766;
+}
+
+.heading3{
+    color: #4a4c54;
+}
+
+.explorebtn{
+    background-color: rgb(255, 157, 0);
+    height: 30px;
+    width: 80px;
+    border-radius: 4px;
+    font-weight: bold;
+}
