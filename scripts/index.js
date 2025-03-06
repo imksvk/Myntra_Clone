@@ -61,7 +61,7 @@ function displayitemsonhomepage(){
 
 
 function bannerchange(){
-    let i = Math.floor((Math.random()*5)+1);
+    let i = Math.floor((Math.random()*7)+1);
     console.log(i);
     let source =  `./images/banner${i}.jpg`;
     document.querySelector(".banner").style.backgroundImage = `url(${source})`;

@@ -16,9 +16,13 @@ function displaybagsummary() {
   let finalpayment = 0;
 
   for(let i=0; i<bagitemsobjects.length; i++){
-    totalmrp += bagitemsobjects[i].current_price;
+
+
+    totalmrp += bagitemsobjects[i].original_price;
     totaldiscount += (bagitemsobjects[i].discount_percentage*bagitemsobjects[i].original_price)/100;
     finalpayment += totalmrp-totaldiscount+99;
+
+
   }
 
   bagsummaryelement.innerHTML = `  <div class="bagdetailscontainer">
