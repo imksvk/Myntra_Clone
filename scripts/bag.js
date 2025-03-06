@@ -11,7 +11,7 @@ function displaybagsummary() {
   let bagsummaryelement = document.querySelector(".bagsummary");
 
   let totalitems = bagitemsobjects.length;
-  let totalmrp = 111;
+  let totalmrp = 0;
   let totaldiscount = 0;
   let finalpayment = 0;
 
