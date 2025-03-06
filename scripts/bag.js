@@ -11,9 +11,15 @@ function displaybagsummary() {
   let bagsummaryelement = document.querySelector(".bagsummary");
 
   let totalitems = bagitemsobjects.length;
-  let totalmrp = 0;
+  let totalmrp = 111;
   let totaldiscount = 0;
   let finalpayment = 0;
+
+  for(let i=0; i<bagitemsobjects.length; i++){
+    totalmrp += bagitemsobjects[i].current_price;
+    totaldiscount += (bagitemsobjects[i].discount_percentage*bagitemsobjects[i].original_price)/100;
+    finalpayment += totalmrp-totaldiscount+99;
+  }
 
   bagsummaryelement.innerHTML = `  <div class="bagdetailscontainer">
             <div class="priceheader">PRICE DETAILS (${totalitems} Items) </div>
