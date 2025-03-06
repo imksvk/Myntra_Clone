@@ -1,6 +1,5 @@
 let itemscontainer = document.querySelector(".itemscontainer");
 let bagitems;
-bannerchange();
 onLoad();
 
 function onLoad(){
@@ -8,6 +7,7 @@ function onLoad(){
     bagitems = bagitemsstr ? JSON.parse(bagitemsstr): [];
     displayitemsonhomepage();
     displaybagicon();
+    bannerchange();
 }
 
 
